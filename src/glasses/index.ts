@@ -46,7 +46,8 @@ bridge.onEvenHubEvent(async (event) => {
   if (t.eventType === OsEventTypeList.CLICK_EVENT) {
     selectedId = 1;
 
-    const ok = await unlock("1234");
+    const appPin = import.meta.env.VITE_PASSWORD;
+    const ok = await unlock(appPin);
 
     if (!ok.ok) return;
 

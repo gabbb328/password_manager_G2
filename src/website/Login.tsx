@@ -18,7 +18,7 @@ export function Login({ onLogin }: LoginProps) {
     if (data.ok) {
       onLogin();
     } else {
-      alert("PIN Errato! Inserisci 1234.");
+      alert("PIN Errato! Inserisci il pin corretto.");
     }
   };
 

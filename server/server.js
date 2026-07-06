@@ -31,7 +31,7 @@ function broadcast(msg) {
   });
 }
 
-const PIN = "1234";
+const PIN = import.meta.env.VITE_PASSWORD;
 
 /* ---------------- API PASSWORDS ---------------- */
 
