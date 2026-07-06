@@ -52,8 +52,12 @@ function App() {
 }
 
 function GlassesComponent() {
+  let bho = [];
+  for (let i = 0; i < 20; i++) {
+    bho.push({ title: `Password ${i}`, username: `Username ${i}`, password: `Password ${i}` });
+  }
   // Assicurati che renderMenu in glasses/menu.ts restituisca qualcosa di renderizzabile o JSX
-  return <>{renderMenu()}</>;
+  return <>{renderMenu(bho)}</>;
 }
 
 export default App;

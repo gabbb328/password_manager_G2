@@ -13,11 +13,10 @@ import { renderPassword } from "./password";
 const bridge = await waitForEvenAppBridge();
 
 let selectedId: number | null = null;
-let unlocked = false;
 
 async function loadMenu() {
   const data = await getPasswords();
-
+  
   bridge.createStartUpPageContainer(
     new CreateStartUpPageContainer({
       containerTotalNum: 1,
@@ -38,6 +37,7 @@ async function loadMenu() {
 }
 
 await loadMenu();
+let unlocked = false;
 
 bridge.onEvenHubEvent(async (event) => {
   const t = event.textEvent;
