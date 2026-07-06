@@ -1,0 +1,19 @@
+{
+  "id": "com.Gabbbbbb.g2vault",
+  "name": "G2 Password Vault",
+  "version": "1.0.0",
+  "description": "Visualizza in modo sicuro le tue password e credenziali direttamente sugli occhiali G2.",
+  "developer": {
+    "name": "Gabriele" ,
+    "website": "https://tuosito.com"
+  },
+  "icon": "assets/icon.png",
+  "entry": {
+    "glasses": "dist/main.js",
+    "phone": "dist/index.html"
+  },
+  "permissions": ["storage", "internet"],
+  "features": {
+    "gestures": ["tap", "double_press", "swipe_up", "swipe_down"]
+  }
+}
